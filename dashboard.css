@@ -1,0 +1,447 @@
+/* ===========================================================
+   GENERAL PAGE
+   =========================================================== */
+.page {
+  background: linear-gradient(to bottom right, #faf1ff, #fdf7ff);
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 60px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* ===========================================================
+   NAVBAR
+   =========================================================== */
+.navbar {
+  width: 100%;
+  padding: 16px 40px;
+  background: #ffffff;
+  border-bottom: 2px solid #f1e4ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #a855f7;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: #4b5563;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #9333ea;
+}
+
+/* Dashboard should look same as others */
+.nav-link.active {
+  color: #4b5563;
+  font-weight: 400;
+}
+
+.logout-btn {
+  border: 2px solid #d8b4fe;
+  background: white;
+  color: #9333ea;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  /* Move logout button left by 5 inches */
+  margin-right: 480px;
+}
+
+.logout-btn:hover {
+  background: #f3e8ff;
+}
+
+/* ===========================================================
+   PAGE HEADER
+   =========================================================== */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Add New Event button */
+.add-btn {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===========================================================
+   STATS CARDS
+   =========================================================== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #f1e4ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.15);
+}
+
+.stat-icon {
+  color: #a855f7;
+  height: 32px;
+  width: 32px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ===========================================================
+   TABS
+   =========================================================== */
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+ font-size: 20px;
+}
+
+.tab {
+  padding: 8px 18px;
+  background: white;
+  border: 1px solid #caa7ff;
+  border-radius: 8px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  background: #f7ebff;
+}
+
+.tab.active {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  color: white;
+  border: none;
+}
+
+/* ===========================================================
+   EVENTS SECTION
+   =========================================================== */
+.events-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e9d5ff;
+}
+
+.events-list {
+  margin-top: 18px;
+}
+
+.event-item {
+  padding: 16px;
+  background: linear-gradient(to right, #faf5ff, #fff1f9);
+  border: 1px solid #e6cafa;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.event-meta {
+  margin-top: 8px;
+  display: flex;
+  gap: 18px;
+  color: #555;
+  font-size: 14px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn-outline {
+  border: 1px solid #a855f7;
+  color: #a855f7;
+  background: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #f9ebff;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===========================================================
+   PARTICIPANTS TABLE
+   =========================================================== */
+.participants-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e9d5ff;
+}
+
+.participants-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.participants-table {
+  border-top: 1px solid #e2d6ff;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 12px;
+}
+
+.table-head {
+  background: #f7f1ff;
+  font-weight: 600;
+}
+
+.table-row:hover {
+  background: #faf5ff;
+}
+
+.no-data {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* ===========================================================
+   ROOM CARDS (2 x 2 layout)
+   =========================================================== */
+.rooms-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e9d5ff;
+}
+
+/* grid: 2 columns so it becomes 2x2 on wide screens */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+/* common card look */
+.room-card {
+  padding: 16px;
+  border-radius: 12px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  border: 1px solid transparent;
+}
+
+/* color variants to match screenshot */
+.pink-card {
+  background: linear-gradient(180deg,#fff5f9,#fffafc);
+  border: 1px solid #ffd9e9;
+}
+
+.purple-card {
+  background: linear-gradient(180deg,#fbf6ff,#fff9ff);
+  border: 1px solid #eadcff;
+}
+
+.blue-card {
+  background: linear-gradient(180deg,#f6fbff,#f9fdff);
+  border: 1px solid #d7e8ff;
+}
+
+.gray-card {
+  background: linear-gradient(180deg,#fbfbfd,#ffffff);
+  border: 1px solid #e8eaf0;
+}
+
+/* room event lines */
+.room-event {
+  font-weight: 600;
+  font-size: 14px;
+  color: #c026d3; /* base; overridden for blue/purple via inline style in JSX */
+}
+
+.room-number {
+  color: #6b21a8;
+  font-weight: 700;
+}
+
+.available-text {
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* ===========================================================
+   MODALS
+   =========================================================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  width: 520px;
+  border-radius: 14px;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal label {
+  margin-top: 10px;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: #444;
+}
+
+.modal input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d4c1ff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: right;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .rooms-grid { grid-template-columns: 1fr; }
+  .page-inner { padding: 12px; }
+}
